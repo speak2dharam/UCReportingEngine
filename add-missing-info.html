@@ -1,0 +1,303 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AWS</title>
+    <!-- bootstrap@5.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/icofont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <style>
+        #drop-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="navbar-vertical-collapsed">
+    <section class="topbar">
+        <div class="container-fluid">
+            <div class="row g-2 align-items-center">
+                <div class="col-auto mmenu">
+                    <a href="javascript:void(0);" onclick="showmenumobile()">
+                        <img src="assets/img/icons/menu-bar.png" alt="">
+                    </a>
+                </div>
+                <div class="col-auto brandlogo">
+                    <h5 class="text-light h6">UC Reporting Engine</h5>
+                </div>
+
+                <div class="col text-end">
+                    <div class="dropdown profilebtn">
+                        <span class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user.png" />
+                        </span>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="change-password.html" class="dropdown-item">Change Password</a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="login.html" class="dropdown-item">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottomSec">
+        <div class="mobmenubg">
+            <a href="javascript:void();" id="Closemenu" onclick="hidemenumobile()"><i class="icofont-close-line-squared-alt"></i></a>
+        </div>
+        <div class="sidebar">
+
+            <nav class="navbar navbar-vertical navbar-expand-lg">
+                <div class="" id="navbarVerticalCollapse">
+                    <!-- scrollbar removed-->
+                    <div class="navbar-vertical-content">
+                        <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+
+                            <li class="nav-item">
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link label-1" href="setup-profile.html" role="button" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-life-buoy"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Dashboard</span></span></div>
+                                    </a>
+                                </div>
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link dropdown-indicator label-1 collapsed" href="#nv-forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-forms">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon">
+                                                <svg class="svg-inline--fa fa-caret-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><!-- <span class="fas fa-caret-right"></span> Font Awesome fontawesome.com -->
+                                            </div>
+                                            <span class="nav-link-icon">
+                                                <img src="assets/img/icons/people.png" height="17" />
+                                            </span><span class="nav-link-text">Customers</span>
+                                        </div>
+                                    </a>
+                                    <div class="parent-wrapper label-1">
+                                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-forms">
+                                            <li class="collapsed-nav-item-title d-none">Customers</li>
+
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="customer-all.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">View all Customers</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="setup-profile.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Setup Profile</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link dropdown-indicator label-1 collapsed" href="#nv-forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-forms">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon">
+
+                                                <svg class="svg-inline--fa fa-caret-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><!-- <span class="fas fa-caret-right"></span> Font Awesome fontawesome.com -->
+                                            </div>
+
+                                            <span class="nav-link-icon">
+
+                                                <img src="assets/img/icons/azure.png" height="17" />
+                                            </span><span class="nav-link-text">Azure Report</span>
+                                        </div>
+                                    </a>
+                                    <div class="parent-wrapper label-1">
+                                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-forms">
+                                            <li class="collapsed-nav-item-title d-none">Azure Report</li>
+
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="upload-azure-migration.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Upload Azure Migrate</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="add-missing-info.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Add Missing Info</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-vertical-footer">
+                <a href="javascript:void()" id="expandMenu" onclick="expandMenu()" style="display:none;">
+                    <img src="assets/img/icons/right-align.png" style="height:20px" />
+                </a>
+                <a href="javascript:void()" id="collapseMenu" onclick="collapseMenu()">
+                    <img src="assets/img/icons/left-align.png" style="height:20px" />
+                    <span>Collapsed view</span>
+                </a>
+            </div>
+        </div>
+        <div class="mainContent ps-2 pb-5">
+            <div class="py-2 mb-3">
+                <div class="container-fluid">
+                    <div class="row g-2 align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <h6 class="mb-0 display-6 fs-4">Upload Azure Migrate Missing Info</h6>
+                            <p>This page provides to upload azure migrate missing information</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="firstpge">
+                <div class="container-fluid">
+                    <div class="row g-3">
+                        <div class="col-md">
+                            <div class="shadow rounded-2 bg-white h-100">
+                                <div class="border-bottom p-3">
+                                    <h5 class="mb-0 h6">Upload SQL Data Excel</h5>
+                                </div>
+                                <div class="p-3">
+                                    <div class="bg-white shadow">
+                                        <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                                            <p>Drag & drop files here</p>
+                                            <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                                            <button onclick="document.getElementById('fileElem').click(); return false;" class="btn btn-info rounded-pill">Or click to select files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 border-top">
+                                    <h6>Important Note : </h6>
+                                    <ul class="impNts">
+                                        <li>
+                                            Firstly ensure that your file is not in
+                                            Readonly mode
+                                            , if your file is in
+                                            Readonly mode
+                                            then open it and save it again and then upload.
+                                        </li>
+                                        <li>Upload only exported .xlsx file.</li>
+                                        <li>File name should not contains any special character or space.</li>
+                                        <li>Tab names in excel and Column names in sheets should not renamed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="shadow rounded-2 bg-white h-100">
+                                <div class="border-bottom p-3">
+                                    <h5 class="mb-0 h6">Upload Workload Excel</h5>
+                                </div>
+                                <div class="p-3">
+                                    <div class="bg-white shadow">
+                                        <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                                            <p>Drag & drop files here</p>
+                                            <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                                            <button onclick="document.getElementById('fileElem').click(); return false;" class="btn btn-info rounded-pill">Or click to select files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 border-top">
+                                    <h6>Important Note : </h6>
+                                    <ul class="impNts">
+                                        <li>
+                                            Open
+                                            Azure portal
+                                            .
+                                        </li>
+                                        <li>
+                                            Select your
+                                            Appliance Name
+                                            and then click on Export Software Inventory.
+                                        </li>
+                                        <li>
+                                            *Firstly ensure your file is not on
+                                            Readonly mode
+                                            , if your file is in
+                                            Readonly mode
+                                            first remove it and save it again and then upload
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="shadow rounded-2 bg-white h-100">
+                                <div class="border-bottom p-3">
+                                    <h5 class="mb-0 h6">Upload App Data Excel</h5>
+                                </div>
+                                <div class="p-3">
+                                    <div class="bg-white shadow">
+                                        <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                                            <p>Drag & drop files here</p>
+                                            <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                                            <button onclick="document.getElementById('fileElem').click(); return false;" class="btn btn-info rounded-pill">Or click to select files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 border-top">
+                                    <h6>Important Note : </h6>
+                                    <ul class="impNts">
+                                        <li>
+                                            Firstly ensure that your file is not in
+                                            Readonly mode
+                                            , if your file is in
+                                            Readonly mode
+                                            then open it and save it again and then upload.
+                                        </li>
+                                        <li> Upload only exported .xlsx file.</li>
+                                        <li>File name should not contains any special character or space.</li>
+                                        <li>Tab names in excel and Column names in sheets should not renamed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="shadow rounded-2 bg-white h-100">
+                                <div class="border-bottom p-3">
+                                    <h5 class="mb-0 h6">Upload Netstat Excel</h5>
+                                </div>
+                                <div class="p-3">
+                                    <div class="bg-white shadow">
+                                        <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                                            <p>Drag & drop files here</p>
+                                            <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                                            <button onclick="document.getElementById('fileElem').click(); return false;" class="btn btn-info rounded-pill">Or click to select files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 border-top">
+                                    <h6>Important Note : </h6>
+                                    <ul class="impNts">
+                                        <li>
+                                            Add Azure Migrate's
+                                            Netstat
+                                            information
+                                        </li>
+                                        <li>Tab names in excel and Column names in sheets should not renamed.</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap@5.3.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+</html>

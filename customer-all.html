@@ -1,0 +1,281 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AWS</title>
+    <!-- bootstrap@5.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/icofont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <link href="https://cdn.datatables.net/v/bs5/dt-2.0.0/b-3.0.0/b-html5-3.0.0/b-print-3.0.0/fc-5.0.0/fh-4.0.0/r-3.0.0/datatables.min.css" rel="stylesheet">
+    
+</head>
+<body class="navbar-vertical-collapsed">
+    <section class="topbar">
+        <div class="container-fluid">
+            <div class="row g-2 align-items-center">
+                <div class="col-auto mmenu">
+                    <a href="javascript:void(0);" onclick="showmenumobile()">
+                        <img src="assets/img/icons/menu-bar.png" alt="">
+                    </a>
+                </div>
+                <div class="col-auto brandlogo">
+                    <h5 class="text-light h6">UC Reporting Engine</h5>
+                </div>
+
+                <div class="col text-end">
+                    <div class="dropdown profilebtn">
+                        <span class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user.png" />
+                        </span>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="change-password.html" class="dropdown-item">Change Password</a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="login.html" class="dropdown-item">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottomSec">
+        <div class="mobmenubg">
+            <a href="javascript:void();" id="Closemenu" onclick="hidemenumobile()"><i class="icofont-close-line-squared-alt"></i></a>
+        </div>
+        <div class="sidebar">
+
+            <nav class="navbar navbar-vertical navbar-expand-lg">
+                <div class="" id="navbarVerticalCollapse">
+                    <!-- scrollbar removed-->
+                    <div class="navbar-vertical-content">
+                        <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+                            <li class="nav-item">
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link label-1" href="setup-profile.html" role="button" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-life-buoy"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Dashboard</span></span></div>
+                                    </a>
+                                </div>
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link dropdown-indicator label-1 collapsed" href="#nv-forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-forms">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon">
+                                                <svg class="svg-inline--fa fa-caret-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><!-- <span class="fas fa-caret-right"></span> Font Awesome fontawesome.com -->
+                                            </div>
+                                            <span class="nav-link-icon">
+                                                <img src="assets/img/icons/people.png" height="17" />
+                                            </span><span class="nav-link-text">Customers</span>
+                                        </div>
+                                    </a>
+                                    <div class="parent-wrapper label-1">
+                                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-forms">
+                                            <li class="collapsed-nav-item-title d-none">Customers</li>
+
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="customer-all.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">View all Customers</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="setup-profile.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Setup Profile</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link dropdown-indicator label-1 collapsed" href="#nv-forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-forms">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon">
+
+                                                <svg class="svg-inline--fa fa-caret-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><!-- <span class="fas fa-caret-right"></span> Font Awesome fontawesome.com -->
+                                            </div>
+
+                                            <span class="nav-link-icon">
+
+                                                <img src="assets/img/icons/azure.png" height="17" />
+                                            </span><span class="nav-link-text">Azure Report</span>
+                                        </div>
+                                    </a>
+                                    <div class="parent-wrapper label-1">
+                                        <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-forms">
+                                            <li class="collapsed-nav-item-title d-none">Azure Report</li>
+
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="upload-azure-migration.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Upload Azure Migrate</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="add-missing-info.html" data-bs-toggle="" aria-expanded="false">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Add Missing Info</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-vertical-footer">
+                <a href="javascript:void()" id="expandMenu" onclick="expandMenu()" style="display:none;">
+                    <img src="assets/img/icons/right-align.png" style="height:20px" />
+                </a>
+                <a href="javascript:void()" id="collapseMenu" onclick="collapseMenu()">
+                    <img src="assets/img/icons/left-align.png" style="height:20px" />
+                    <span>Collapsed view</span>
+                </a>
+            </div>
+        </div>
+        <div class="mainContent ps-2 pb-5">
+            <div class="border-bottom py-2 mb-3">
+                <div class="container-fluid">
+                    <div class="row g-2 align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <h6 class="mb-0">Customers</h6>
+                        </div>
+                        <!--<div class="col-auto">
+                            <a href="#" class="btn btn-outline-secondary btn-sm">
+                                <img src="assets/img/powerbi-logo.png" height="20" />Power BI Reports
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="firstpge">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-bordered table-light bg-white" id="cstTbl">
+                                <thead>
+                                    <tr>
+                                        <th align="left">
+                                            S No.
+                                        </th>
+                                        <th>
+                                            Customer ID
+                                        </th>
+                                        <th>
+                                            Opportunity ID
+                                        </th>
+                                        <th>
+                                            TPID
+                                        </th>
+                                        <th>
+                                            Customer Name
+                                        </th>
+                                        <th>
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="broder-top">
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            8686978
+                                        </td>
+                                        <td>
+                                            87689978
+                                        </td>
+                                        <td>
+                                            87697
+                                        </td>
+                                        <td>
+                                            Testing Customer
+                                        </td>
+                                        <td>
+                                            <a href="setup-profile.html" class="btn btn-sm btn-info rounded-pill">Edit Profile</a>
+                                            <a href="view-report.html" class="btn btn-sm btn-danger rounded-pill">View report</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap@5.3.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-2.0.0/b-3.0.0/b-html5-3.0.0/b-print-3.0.0/fc-5.0.0/fh-4.0.0/r-3.0.0/datatables.min.js"></script>
+    <script>
+        var buttonCommon = {
+            
+            text: '<i class="icofont-download"></i>',
+            className: 'ExportBtn',
+            titleAttr: 'Export in Excel',
+            init: function (api, node, config) {
+                $(node).removeClass('btn btn-secondary')
+            },
+            customize: function (xlsx) {
+                var sheet = xlsx.xl.worksheets['sheet1.xml'];
+                // Loop over the cells
+                $('row c', sheet).each(function () {
+                    //select the index of the row
+                    var numero = $(this).parent().index();
+                    var residuo = numero % 2;
+                    if (numero == 0) {
+                        $(this).attr('s', '37');
+
+                    }
+                    //$(this).attr('s', '50');
+                });
+            },
+        };
+        $('#cstTbl').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": false,
+            //"scrollX": true,
+            "scrollX": '100%',
+            order: [],
+            "dom":
+                "<'row'<'col-sm-12'<'DtblTopCntrlBox'<'DtblTopCntrlInn'l><'DtblTopCntrlInn'B><'DtblTopCntrlInn'f><'DtblTopCntrlInn'p>>>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row pt-1'<'col-sm-5'i><'col-sm-7 d-none'p>>",
+            "language": {
+                "lengthMenu": "Display _MENU_ ",
+                searchPlaceholder: "Search records",
+                search: "_INPUT_",
+            },
+
+            buttons: [
+                $.extend(true, {}, buttonCommon, {
+                    extend: 'excelHtml5',
+                    footer: false,
+                    title: '',
+                    filename: 'NominationsUC',
+                    sheetName: 'Nominations',
+                }),
+            ],
+        })
+    </script>
+</body>
+</html>
