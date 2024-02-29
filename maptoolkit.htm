@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<style>
+.got-it1{
+	border: 1px solid green;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    right: 200px;
+    bottom: 185px;
+	}
+</style>
+
+</head>
+
+<body style="text-align:center">
+<!--for screen which offers resolutiopn more than 1900px-->
+<div class="xl-large"> <img src="img/1920/maptoolkit.png" usemap="#Map1900" style="width:100%;">
+  <map name="Map1900">
+  <area class="got-it" shape="rect" coords="0,13,1884,954" href="upload-inventory-azure-migrate.htm">
+  </map>
+</div>
+
+<!--for screen which offers resolutiopn more than 1600px-->
+
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/imageMapResizer.js"></script> 
+<script type="text/javascript">
+        $('map').imageMapResize();
+    </script>
+</body>
+</html>

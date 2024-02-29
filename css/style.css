@@ -1,0 +1,160 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	}
+body{
+	background:#fff;
+	background-size:100%;
+
+	overflow-x: hidden;
+    overflow-y: auto;
+	
+		text-align:center;
+	font-family:Calibri, Arial;
+	margin:0px;
+	position:relative;
+}
+:focus {
+outline: 0;
+}
+h2{
+	font-size:25px;
+	color:#000;
+}
+img{width:100%;}
+.laptop, .large, .small{display:none;}
+img{width:100%}
+/*@media screen and (min-width: 1024px) and (max-width: 1149px) {
+   
+   .small{
+		display:none;
+		margin:0px auto;
+		}
+		
+    .laptop{
+		display:none;
+		margin:0px auto;
+		}
+		.large{
+		display:none;
+		}
+		.xl-large{
+		display:none;
+		}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1380px) {
+    .small{
+		display:block;
+		margin:0px auto;
+		}
+	.laptop{
+		display:block;
+		margin:0px auto;
+		}
+		.large{
+		display:none;
+		}
+		.xl-large{
+		display:none;
+		}
+}
+@media screen and (min-width: 1580px) and (max-width: 1800px) {
+    
+	.small{
+		display:none;
+		margin:0px auto;
+		}
+		.laptop{
+		display:none;
+		}
+		.large{
+		display:block;
+		margin:0px auto;
+		}
+		.xl-large{
+		display:none;
+		}
+}*/
+@media screen and (min-width: 1024px) and (max-width: 2200px) {
+   .small{
+		display:none;
+		margin:0px auto;
+		}
+   
+    .laptop{
+		display:none;
+		}
+		.xl-large{
+		display:block;
+		margin:0px auto;
+		}
+		.large{
+		display:none;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quick-nav{
+	position:absolute;
+	right:0;
+	top:20%;
+	border:1px solid #f19523;
+			transition:ease-in-out 0.5s;}
+	
+	.quick-nav ul {
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    background: #fff;
+    padding: 0;
+    font-family: calibri;
+}
+
+	.quick-nav ul li{
+		display: table;
+    width: 100%;
+}
+
+.quick-nav ul li a {
+    display: table;
+    padding: 10px;
+    text-decoration: none;
+width: 100%;
+color:#000;
+border-bottom:1px solid #EDEDED;
+background:rgba(241, 149, 35, 0.03);}
+
+.quick-nav ul li a:hover{
+	background:#EDEDED;}
+
+.quick-nav .toggle-btn {
+background: #f19523;
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    top: -1px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #fff;
+	text-decoration:none;}
+	
+	
+	.quick-nav-slide{
+		right:-135px;
+		transition:ease-in-out 0.5s;}
