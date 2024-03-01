@@ -2484,7 +2484,7 @@ body {
 }
 .prfCard .checkbox-wrapper-16 .checkbox-tile{
     background-color:#fff;
-     background:url(../img/shape.png) no-repeat bottom center;
+     background:url(../img/shape.png) no-repeat bottom center #fff;
      height:200px;
      padding:20px;
 }
